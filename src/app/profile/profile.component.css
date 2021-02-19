@@ -1,0 +1,20 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 10px 5px rgba(204, 204, 204, 100);
+  width: 400px;
+  border-radius: 15px;
+
+  /* margin: auto; */
+}
+.img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.contact-text {
+  color: rgb(180, 180, 180);
+}

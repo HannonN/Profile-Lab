@@ -1,0 +1,31 @@
+<main class="main-container">
+  <section class="edit-container">
+    <h2 class="form-header">Edit your Profile</h2>
+    <form
+      #updateForm="ngForm"
+      (ngSubmit)="formSubmission(updateForm)"
+      class="form"
+    >
+      <label class="blue" for="name" [ngModel]="userProfile.name">Name</label>
+      <input type="text" id="name" name="name" class="form-input" />
+      <label class="blue" for="contact">Contact</label>
+      <input
+        type="text"
+        id="contact"
+        name="contact"
+        [ngModel]="userProfile.contact"
+        class="form-input"
+      />
+      <label class="blue" for="bio">Bio</label>
+      <textarea
+        name="bio"
+        id="bio"
+        cols="30"
+        rows="10"
+        [ngModel]="userProfile.bio"
+        class="form-input"
+      ></textarea>
+      <button class="button">Update</button>
+    </form>
+  </section>
+</main>
